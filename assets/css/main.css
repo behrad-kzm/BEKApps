@@ -32,13 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
-<style>
 
-.tab {position:absolute;left:150px; }
-
-}
-
-</style>
 ol, ul {
 	list-style: none;
 }
@@ -620,7 +614,51 @@ input, select, textarea {
 		.icon > .label {
 			display: none;
 		}
+/*AppIcon*/
+.icons {
+      height: 100px;
+      width: 100px;
+      
+      background-size: cover;
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      margin: 20px;
+      border-radius: 24px;
+      position: relative;
+    }
+    .icons.barandeBash {
+    	background-image: url(../../images/Apps/Barandebash/logo.png);
+    }
+    .icons.playcenter {
+    	background-image: url(../../images/Apps/Playcenter/logo.png);
+    }
+    .icons.autoreplypal {
+    	background-image: url(../../images/Apps/Autoreplypal/logo.jpeg);
+    }
+    .icons.speedapp {
+    	background-image: url(../../images/Apps/Speedapp/logo.png);
+    }
+    .icons a:before,
+    .icons a:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      border-radius: 100%;
+      -webkit-transform: scaleX(2) scaleY(1.05);
+      transform: scaleX(2) scaleY(1.05);
+      clip: rect(0, 66px, 100px, 34px);
+      z-index: -1;
+    }
 
+    .icons a:after {
+      -webkit-transform: scaleY(2) scaleX(1.05) rotate(90deg);
+      transform: scaleY(2) scaleX(1.05) rotate(90deg);
+    }
 /* Image */
 
 	.image {
