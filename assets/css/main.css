@@ -617,7 +617,7 @@ input, select, textarea {
 /*AppIcon*/
 .icons {
       height: 100px;
-      width: 100px;
+      width: 250px;
       
       background-size: cover;
       text-decoration: none;
@@ -639,7 +639,7 @@ input, select, textarea {
     .icons.speedapp {
     	background-image: url(../../images/Apps/Speedapp/logo.png);
     }
-    .icons a:before,
+/*    .icons a:before,
     .icons a:after {
       content: '';
       position: absolute;
@@ -658,7 +658,7 @@ input, select, textarea {
     .icons a:after {
       -webkit-transform: scaleY(2) scaleX(1.05) rotate(90deg);
       transform: scaleY(2) scaleX(1.05) rotate(90deg);
-    }
+    }*/
 /* Image */
 
 	.image {
@@ -928,6 +928,7 @@ input, select, textarea {
 		ul.icons li {
 			display: inline-block;
 			padding: 0 0.75em 0 0;
+			float: left;
 		}
 
 			ul.icons li:last-child {
@@ -950,6 +951,11 @@ input, select, textarea {
 
 				ul.icons li a:active {
 					background-color: rgba(255, 255, 255, 0.175);
+				}
+
+				ul.icons li a i {
+					font-size: 1.4rem;
+					padding-top: .35rem;
 				}
 
 /* Table */
